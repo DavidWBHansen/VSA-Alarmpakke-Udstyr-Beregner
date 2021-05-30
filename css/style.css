@@ -1,0 +1,576 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+
+/*---------------------Mobil version---------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 !important
+}
+
+
+#regForm {
+    background-color: #ffffff;
+    margin: 10px auto;
+    padding: 40px;
+    min-width: 300px;
+}
+
+.form-top {
+    height: 10vh;
+    display: none
+}
+
+.title {
+    margin: 1em 3em 0 0;
+    font-size: 1.3em;
+    text-align: center;
+    display: none
+}
+
+.form-logo {
+    width: 50px;
+    float: right;
+    display: block
+}
+
+#iconer {
+    clear: both;
+    display: none
+}
+
+#iconer svg {}
+
+
+.form-line {
+    width: 100vw;
+    border-top: 1px solid #259EF3;
+    opacity: .5;
+    display: block;
+}
+
+
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300
+}
+
+h2 {
+    text-align: center;
+    margin: 1em 0 2em 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    margin: auto;
+    height: ;
+    display: none;
+}
+
+.infomation-tab {
+    margin: 0 auto 3em auto;
+    width: 400px;
+}
+
+.button-container {
+    margin: 0 auto;
+    max-width: 370px;
+}
+
+button {
+    padding: 7px 20px;
+    margin: 30px 0 2em 0;
+    width: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    border: 3px solid;
+    border-radius: 50px;
+    border-color: #1E73BE;
+    background-color: #1E73BE;
+    text-transform: none;
+    cursor: pointer
+}
+
+.knap:hover {}
+
+
+.shopKnap {
+    margin: 1em 0 0em 0;
+    display: none;
+    background-color: #1E73BE;
+        border-color:  #1E73BE;
+    color: white;
+}
+
+#shopKnap {
+    text-decoration: none;
+    
+}
+
+.shopKnap:hover {}
+
+#bronzeKnap {
+    display: none
+}
+
+#soelvKnap {
+    display: none
+}
+
+#guldKnap {
+    display: none
+}
+
+
+#nextBtn {
+    float: right;
+}
+
+#prevBtn {
+    float: left;
+}
+
+#prevBtn1 {
+    display: none
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #259EF3;
+}
+
+#indhold {
+       font-size: 1em;
+    color: white;
+    text-align: left;
+    margin: 1em auto;
+    border: 2px solid;
+    background-color: #1E73BE;
+    border-radius: 50px;
+    padding: 40px;
+    width: 340px;
+}
+
+.infomation-tab h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.resultat-flex {
+    clear: both
+}
+
+#resultat-tab-bronze {
+    display: none
+}
+
+#resultat-tab-soelv {
+    display:
+}
+
+#resultat-tab-guld {
+    display: none
+}
+
+.bronzeKnap {}
+
+.soelvKnap {}
+
+.guldKnap {}
+
+
+.resultat-flex h2 {
+    font-size: 1.3em;
+    margin: 0em 0 0 0
+}
+
+.resultat-flex h1 {
+    font-size: 3em;
+    margin: 1em 0 ;
+    font-weight: 700;
+    color: #0069B4;
+    text-transform: uppercase;
+}
+
+.resultat-colum {
+    width:
+}
+
+.resultat-colum h2 {}
+
+
+
+/*------------------Radio---------------*/
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #4CAE50;
+    border-color: #4CAE50;
+    color: white
+}
+
+.radio-toolbar {
+    width: 205px;
+    margin: 0 auto
+}
+
+.radio-toolbar label {
+    display: block;
+    width: auto; 
+    padding: 12px 0px;
+    margin: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: #1E73BE;
+    color: #1E73BE;
+    text-align: center;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.radio-toolbar label:hover {
+    border-color: #1E73BE;
+    background-color: #1E73BE;
+    color: white;
+    transition: .2s
+}
+
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {}
+
+
+/*---------------------Animation Zone---------------*/
+
+.path {
+    display: none;
+    width: 11vw;
+    transform: rotate(deg);
+    stroke-dasharray: 1400;
+    animation: dash 3s linear;
+    animation-fill-mode: forwards;
+    -webkit-animation: draw 3s linear;
+    margin: 0 -1.2vw -4px 0;
+    animation-fill-mode: both
+}
+
+#hus {
+    display: inline
+}
+
+#maaler {
+    animation-fill-mode: both;
+
+
+
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1400;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes draw {
+
+    from {
+        stroke-dashoffset: 1400;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+
+
+/*Media@
+---------------------------------------------------------------------------*/
+/* For width bigger than px: */
+@media only screen and (min-width: 240px) {}
+
+@media only screen and (min-width: 360px) {}
+
+@media only screen and (min-width: 480px) {}
+
+
+/*---------------------desktop version---------------*/
+@media only screen and (min-width: 780px) {
+
+
+    #regForm {
+        background-color: #ffffff;
+        margin: 10px auto;
+        padding: 40px;
+        min-width: 300px;
+    }
+
+
+
+    .title {
+        margin: 30px ;
+        display: block;
+        float: right;
+        font-weight: 400
+            
+    }
+
+    .form-logo {
+        width: 80px;
+        
+    }
+
+    #iconer {
+        clear: both;
+        display: block
+    }
+
+
+    h1 { 
+    
+    }
+
+    h2 {
+    }
+
+    input {
+
+    }
+
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+    }
+
+    /* Hide all steps by default: */
+    .tab {
+        margin: auto;
+        height: 400px;
+    }
+
+    .infomation-tab {
+        margin: 0 auto 3em auto;
+        width: 400px;
+    }
+
+    .button-container {
+        margin: 0 auto;
+        max-width: 370px;
+    }
+
+    button {
+  margin: 0 0 5em 0;
+    }
+
+    .knap:hover {
+        border-color: #1E73BE;
+        background-color: #1E73BE;
+        color: white;
+        transition: .2s;
+        opacity: 0.8;
+    }
+
+
+    .shopKnap {
+        margin: 0em 0 0em 0;
+        display: none;
+        color: white;
+    }
+
+    #shopKnap {
+        text-decoration: none;
+    }
+
+    .shopKnap:hover {
+        opacity: 0.8;
+    }
+
+
+
+    #nextBtn {
+        float: right;
+    }
+
+    #prevBtn {
+        float: left;
+    }
+
+    #prevBtn1 {
+        display: none
+    }
+
+    /* Make circles that indicate the steps of the form: */
+
+    .step {
+        height: 0px;
+   
+      
+    }
+
+
+    .step.active {
+        opacity: 1;
+    }
+
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+        background-color: #259EF3;
+    }
+
+
+
+
+    .infomation-tab h2 {
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    .resultat-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #resultat-tab-bronze {
+        display: none
+    }
+
+    #resultat-tab-soelv {
+        display:
+    }
+
+    #resultat-tab-guld {
+        display: none
+    }
+
+
+
+    .resultat-flex h2 {
+ 
+        margin: 0em 0 0 0
+    }
+
+    .resultat-flex h1 {
+     font-size: 5em
+
+    }
+
+    #indhold {
+      
+    }
+
+    .resultat-colum {
+        width: 33%
+    }
+
+    .resultat-colum h2 {}
+
+
+
+    /*------------------Radio---------------*/
+
+    .radio-toolbar input[type="radio"]:checked + label {
+     
+    }
+
+    .radio-toolbar {
+       
+    }
+
+    .radio-toolbar label {
+     
+    }
+
+    .radio-toolbar label:hover {
+      
+    }
+
+
+    .radio-toolbar input[type="radio"] {
+     
+    }
+
+    .radio-toolbar input[type="radio"]:focus + label {}
+
+
+    /*---------------------Animation Zone---------------*/
+
+    .path {
+   
+    }
+
+    #hus {
+        display: inline
+    }
+
+    #maaler {
+        animation-fill-mode: both;
+
+
+
+
+
+}

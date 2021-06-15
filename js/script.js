@@ -388,7 +388,10 @@ function delegation(dataObject) {
             beregner("guld");
 
         }
-
+        else if (dataObject['stoerrelse'] === 'større end 150 m2' && dataObject['sikring'] === "indbrud") {
+            console.log("hey7")
+            beregner("guld");
+        }
 
         return
     }
